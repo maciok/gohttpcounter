@@ -8,7 +8,7 @@ import (
 
 const COUNTER_COOKIE = "pingPongCounter"
 
-func handlePing(w http.ResponseWriter, r *http.Request) {o
+func handlePing(w http.ResponseWriter, r *http.Request) {
 	i := cookieHandler(r, w, func(i int) int {
 		return i + 1
 	})
